@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football Dynasty</title>
+    <meta name="description" content="A football management game: general manager, head coach and optional idle franchise mode. Free, runs in your browser, saves stay on your device." />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <style>
+      :root {
+        --bg: #0b0f17;
+        --panel: #111722;
+        --line: #232b3a;
+        --text: #efe9dc;
+        --dim: #c9c3b6;
+        --mute: #8d94a1;
+        --gold: #c9a54c;
+        --gold-bright: #e3c46e;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.6 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+      a { color: inherit; }
+      .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+      header { border-top: 3px solid var(--gold); }
+      .hero { padding: 64px 0 40px; display: grid; gap: 20px; }
+      .kicker { color: var(--gold); letter-spacing: .18em; text-transform: uppercase; font-size: 12px; font-weight: 700; }
+      h1 { font-size: clamp(40px, 8vw, 72px); line-height: .95; margin: 0; letter-spacing: .02em; text-transform: uppercase; font-weight: 800; }
+      .lead { color: var(--dim); max-width: 620px; font-size: 17px; margin: 0; }
+      .cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+      .btn { display: inline-flex; align-items: center; height: 46px; padding: 0 22px; text-decoration: none; text-transform: uppercase; letter-spacing: .1em; font-weight: 700; font-size: 13px; border: 1px solid var(--line); }
+      .btn.primary { background: var(--gold); color: #0b0f17; border-color: var(--gold); }
+      .btn:hover { border-color: var(--gold-bright); }
+      .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); padding: 24px 0 48px; }
+      .card { background: var(--panel); border: 1px solid var(--line); padding: 18px; }
+      .card h2 { margin: 0 0 6px; font-size: 15px; text-transform: uppercase; letter-spacing: .1em; color: var(--gold-bright); }
+      .card p { margin: 0; color: var(--dim); font-size: 14px; }
+      .note { color: var(--mute); font-size: 13px; padding-bottom: 48px; border-top: 1px solid var(--line); padding-top: 20px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap hero">
+        <div class="kicker">United Gridiron League</div>
+        <h1>Football<br />Dynasty</h1>
+        <p class="lead">
+          Take over one of sixteen franchises as general manager and head coach. Draft, sign, trade and develop your roster, call plays or let your staff
+          run game day, and build a dynasty over as many seasons as you like.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="./">Play Now</a>
+          <a class="btn" href="./#/guide">How to Play</a>
+        </div>
+      </div>
+    </header>
+    <main class="wrap">
+      <section class="grid" aria-label="Features">
+        <div class="card"><h2>A real simulation</h2><p>Every play is simulated from player ratings, schemes and game plans, the same engine whether you quick-sim, watch or coach.</p></div>
+        <div class="card"><h2>General manager</h2><p>Salary cap, contracts, free agency with competing bids, trades with CPU teams that know what they need, scouting and a 7-round draft.</p></div>
+        <div class="card"><h2>Head coach</h2><p>Schemes, weekly game plans, personnel packages, training, and Coach Mode: call every play yourself.</p></div>
+        <div class="card"><h2>Play your way</h2><p>Hands-on every snap, or turn on idle mode and let the season move while you are away. It never makes big decisions without you.</p></div>
+        <div class="card"><h2>A league with history</h2><p>Records, rivalries, awards, franchise histories and a Hall of Fame that grow with every season you play.</p></div>
+        <div class="card"><h2>Free and private</h2><p>No account, no ads, no paid boosts. Your saves stay in your browser; export them to back up or move devices.</p></div>
+      </section>
+      <p class="note">All teams, players and leagues are fictional. Saves live in this browser's storage. Clearing site data deletes them, so export a backup from Settings first.</p>
+    </main>
+  </body>
+</html>
